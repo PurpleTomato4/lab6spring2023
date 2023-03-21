@@ -16,8 +16,8 @@ def decoder(store):
         if int(string[i]) >= 3: # should value equal of be greater than 3, subtract 3
             string[i] = str(int(string[i]) - 3)
         else:
-            diff = 10 + int(string[i])
-            string[i] = str(3 + diff)
+            diff = 10 - int(string[i])
+            string[i] = str(diff+1)
     string = ''.join(string)
     return string
 
